@@ -7,10 +7,10 @@ A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony
 ## Getting Started
 
 1. If not already done, [install Docker Compose](https://docs.docker.com/compose/install/)
-2. Run `docker-compose build --pull --no-cache` to build fresh images
-3. Run `docker-compose up` (the logs will be displayed in the current shell)
+2. Run `make build` or `docker-compose build --pull --no-cache` to build fresh images
+3. Run `make run` or `docker-compose up` (the logs will be displayed in the current shell)
 4. Open `https://localhost` in your favorite web browser and [accept the auto-generated TLS certificate](https://stackoverflow.com/a/15076602/1352334)
-5. Run `docker-compose down --remove-orphans` to stop the Docker containers.
+5. Run `make stop` or `docker-compose down --remove-orphans` to stop the Docker containers.
 
 ## Features
 
@@ -24,16 +24,3 @@ A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony
 
 **Enjoy!**
 
-## Docs
-
-1. [Build options](docs/build.md)
-2. [Using Symfony Docker with an existing project](docs/existing-project.md)
-3. [Support for extra services](docs/extra-services.md)
-4. [Deploying in production](docs/production.md)
-5. [Installing Xdebug](docs/xdebug.md)
-6. [Using a Makefile](docs/makefile.md)
-7. [Troubleshooting](docs/troubleshooting.md)
-
-## Credits
-
-Created by [Kévin Dunglas](https://dunglas.fr), co-maintained by [Maxime Helias](https://twitter.com/maxhelias) and sponsored by [Les-Tilleuls.coop](https://les-tilleuls.coop).
