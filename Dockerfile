@@ -41,6 +41,7 @@ RUN set -eux; \
 	docker-php-ext-enable \
 		apcu \
 		opcache \
+		# make \
 	; \
 	\
 	runDeps="$( \
